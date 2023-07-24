@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,500,600,700,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--bg-color);
+  color: white;
+
+  font-family: Assistant;
+}
+
+button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+
+  background-color: var(--btn-color);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: normal;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+
+  background-color: var(--input-color);
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+:root {
+  --bg-color: #262627;
+  --text-color: #121212;
+  --btn-color: #a8a5ff;
+  --input-color: #beb9ff;
+  --border-color: transparent;
+}
+
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #ffffff;
+
+  color: #121212;
+}
+
+.container {
+  width: 100%;
+  padding: 5px;
+}
+
+.box {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.item {
+  flex-shrink: 0;
+
+  border-color: var(--border-color);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 5px;
+
+  color: var(--text-color);
+
+  font-family: inherit;
+}
+
+button:active {
+  transform: scale(90%);
+}
+
+input:focus {
+  outline: 2px double var(--input-color);
+}
+
+label.item {
+  position: absolute;
+  top: -25px;
+  align-self: flex-start;
+  color: inherit;
+}

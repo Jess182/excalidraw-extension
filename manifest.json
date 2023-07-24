@@ -1,0 +1,29 @@
+{
+  "name": "Excalidraw extension",
+  "description": "Extension add revisions to excalidraw diagrams",
+  "homepage_url": "https://github.com/Jess182/exalidraw-drive-extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Excalidraw extension",
+    "default_popup": "popup/index.html"
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "js": ["content.js"],
+      "matches": ["https://excalidraw.com/*", "http://excalidraw.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs", "scripting", "clipboardRead", "storage"],
+  "host_permissions": [
+    "https://api.github.com/gists/*",
+    "http://api.github.com/gists/*"
+  ]
+}

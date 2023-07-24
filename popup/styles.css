@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,300,400,500,600,700,800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background-color: var(--bg-color);
+  color: white;
+
+  font-family: Assistant;
+}
+
+button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 60px;
+
+  background-color: var(--btn-color);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: normal;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+select {
+  flex-grow: 2;
+  width: 120px;
+  padding: 5px;
+
+  background-color: var(--input-color);
+}
+
+select {
+  background-color: var(--btn-color);
+
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+:root {
+  --bg-color: #262627;
+  --text-color: #121212;
+  --btn-color: #a8a5ff;
+  --input-color: #beb9ff;
+  --border-color: transparent;
+}
+
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #ffffff;
+}
+
+.container {
+  width: 320px;
+  padding: 5px;
+}
+
+.box {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.item {
+  flex-shrink: 0;
+  height: 30px;
+  border-color: var(--border-color);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 2px;
+
+  color: var(--text-color);
+
+  font-family: inherit;
+}
+
+button:active {
+  transform: scale(90%);
+}
+
+input:focus {
+  outline: 2px double var(--input-color);
+}
+
+#import-btn-text {
+  position: relative;
+  bottom: 2px;
+}
