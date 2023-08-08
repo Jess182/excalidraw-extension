@@ -87,11 +87,11 @@ select {
   font-family: inherit;
 }
 
-button:active {
+button:enabled:active {
   transform: scale(90%);
 }
 
-input:focus {
+input:enabled:focus {
   outline: 2px double var(--input-color);
 }
 
