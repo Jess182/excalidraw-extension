@@ -25,5 +25,8 @@
   "host_permissions": [
     "https://api.github.com/gists/*",
     "http://api.github.com/gists/*"
-  ]
+  ],
+  "icons": {
+    "32": "icon32.png"
+  }
 }
