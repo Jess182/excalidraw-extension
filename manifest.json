@@ -27,6 +27,6 @@
     "http://api.github.com/gists/*"
   ],
   "icons": {
-    "32": "icon32.png"
+    "32": "icon-32.png"
   }
 }
